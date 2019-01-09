@@ -1,0 +1,15 @@
+<div *ngFor="let movie of movieList">
+  <div class="row">
+    <div class="col-md-12">
+      <a href="#" class="list-group-item clearfix">
+      <div class="float-left">
+        <h4 class="list-group-item-heading">{{movie.name}}</h4>
+        <p class="list-group-item-text">{{movie.description}}</p>
+      </div>   
+      <span class="float-right">
+        <img [src] = "movie.imagePath" alt="{{movie.name}}" class="img-fluid img-thumbnail" style="max-height: 150px">
+      </span>
+    </a>
+    </div>
+  </div>
+</div>
